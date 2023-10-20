@@ -27,6 +27,7 @@ export { isProfileMetadata } from './LSP3/isProfileMetadata';
 export { addDigitalAssetCreators } from './LSP4/addDigitalAssetCreators';
 export { removeDigitalAssetCreators } from './LSP4/removeDigitalAssetCreators';
 export { getDigitalAssetCreators } from './LSP4/getDigitalAssetCreators';
+export { authenticateDigitalAssetCreators } from './LSP4/authenticateDigitalAssetCreators';
 
 // ------ LSP5 ------
 export { generateReceivedAssetKeys } from './LSP5/generateReceivedAssetKeys';
@@ -45,3 +46,4 @@ export { decodePermissions } from './LSP6/decodePermissions';
 export { addIssuedAssets } from './LSP12/addIssuedAssets';
 export { removeIssuedAssets } from './LSP12/removeIssuedAssets';
 export { getIssuedAssets } from './LSP12/getIssuedAssets';
+export { authenticateIssuedAssets } from './LSP12/authenticateIssuedAssets';
