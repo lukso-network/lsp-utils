@@ -4,7 +4,5 @@
 # Check if there are tests containing `.only`
 bash scripts/searchTestsForOnly.bash
 
-if [[ $(git diff origin/main --name-only src/ tests/) != "" ]];
-then
-    npm test
-fi
+# run the tests of the utils or tests that have been modifeid
+bash scripts/runTestsForChangedUtils.bash
