@@ -1,0 +1,1 @@
+export { isAssetMetadata } from './isAssetMetadata';
