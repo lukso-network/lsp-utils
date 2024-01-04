@@ -27,7 +27,7 @@
         "prettier": "prettier -w .",
         "clean": "rm -rf dist && rm -rf src/typechain",
         "build:docs": "typedoc --options typedoc.json",
-        "build:types:all": "typechain --target=ethers-v6 --out-dir src/typechain ./node_modules/@lukso/lsp-smart-contracts/artifacts/*.json ./node_modules/@erc725/smart-contracts/artifacts/*.json",
+        "build:types:all": "typechain --target=ethers-v6 --out-dir src/typechain ./node_modules/@lukso/lsp-smart-contracts/artifacts/*.json ./node_modules/@erc725/smart-contracts/artifacts/*.json ./node_modules/@openzeppelin/contracts/build/contracts/*.json",
         "build:types:specific": "bash scripts/generateSpecificTypechain.bash",
         "build": "npm run clean && npm run lint && npm run build:types:specific && vite build",
         "test:IPFS": "hardhat test src/IPFS/**/*.test.ts",
@@ -47,6 +47,7 @@
     "dependencies": {
         "@erc725/erc725.js": "^0.20.0",
         "@lukso/lsp-smart-contracts": "^0.11.1",
+        "@openzeppelin/contracts": "^5.0.1",
         "ethers": "^6.8.0",
         "isomorphic-fetch": "^3.0.0"
     },

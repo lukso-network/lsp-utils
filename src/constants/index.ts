@@ -1,5 +1,9 @@
 import { BytesLike } from 'ethers';
-import { PERMISSIONS } from '@lukso/lsp-smart-contracts';
+import { PERMISSIONS, INTERFACE_IDS } from '@lukso/lsp-smart-contracts';
+
+// generate types from INTERFACE_IDS imported from `@lukso/lsp-smart-contracts`
+export type InterfaceIdName = keyof typeof INTERFACE_IDS;
+export type InterfaceId = (typeof INTERFACE_IDS)[InterfaceIdName];
 
 // generate types from PERMISSIONS imported from `@lukso/lsp-smart-contracts`
 export type LSP6PermissionName = keyof typeof PERMISSIONS;
