@@ -2,7 +2,7 @@
 export * from './constants';
 
 // ------ Helpers ------
-export { getErc725yContract } from './helpers';
+export { getErc725yContract, supportsLSPInterface } from './helpers';
 
 // ------ TypeChain ------
 export * from './typechain';
