@@ -1,0 +1,3 @@
+describe('isAssetMetadata', () => {
+    it('', async () => {});
+});

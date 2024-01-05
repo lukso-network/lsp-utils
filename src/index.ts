@@ -35,6 +35,8 @@ export {
     addDigitalAssetCreators,
     removeDigitalAssetCreators,
     getDigitalAssetCreators,
+    getAssetMetadata,
+    isAssetMetadata,
 } from './LSP4';
 
 // ------ LSP5 ------

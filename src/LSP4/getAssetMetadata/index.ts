@@ -1,0 +1,1 @@
+export { getAssetMetadata } from './getAssetMetadata';
