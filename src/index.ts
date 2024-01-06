@@ -53,3 +53,6 @@ export {
 
 // ------ LSP12 ------
 export { addIssuedAssets, removeIssuedAssets, getIssuedAssets } from './LSP12';
+
+// ------ LSP23 ------
+export { deployUniversalProfile } from './LSP23';

@@ -1,0 +1,1 @@
+export { deployUniversalProfile } from './deployUniversalProfile';
