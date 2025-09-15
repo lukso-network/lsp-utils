@@ -17,8 +17,8 @@ import { generateArrayKey } from '../generateArrayKey';
  * @see https://github.com/lukso-network/LIPs/blob/main/LSPs/LSP-2-ERC725YJSONSchema.md
  * @example
  * ```ts
- * generateSingletonKey(arrayDataKeyName, index) => `<bytes16(keccak256(arrayDataKeyName))>:<bytes16(index)>`
- * generateSingletonKey(arrayDataKey, index) => `<bytes16(arrayDataKey)>:<bytes16(index)>`
+ * generateArrayElementKeyAtIndex(arrayDataKeyName, index) => `<bytes16(keccak256(arrayDataKeyName))>:<bytes16(index)>`
+ * generateArrayElementKeyAtIndex(arrayDataKey, index) => `<bytes16(arrayDataKey)>:<bytes16(index)>`
  * ```
  */
 export const generateArrayElementKeyAtIndex = (arrayKey: string, index: number) => {
