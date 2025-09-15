@@ -73,7 +73,7 @@ export async function addIssuedAssets(
         toBeHex(issuedAssetsLength + newIssuedAssets.length, 16),
         ...newIssuedAssets.flatMap((newIssuedAsset, index) => [
             newIssuedAsset.address.toString(),
-            concat([newIssuedAsset.interfaceId, toBeHex(index, 16)]),
+            concat([newIssuedAsset.interfaceId, toBeHex(issuedAssetsLength + index, 16)]),
         ]),
     ];
 
